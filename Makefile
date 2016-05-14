@@ -35,6 +35,8 @@ all:
 	make sump64
 	echo "Make prime64"	
 	make prime64
+	echo "Make invsump64"	
+	make invsump64
 
 main: $(OBJ)
 	$(CXX) $(CFLAGS) $(LFLAGS) -o main -L/opt/local/lib   main.cc $(OBJ)  $(LIBS)

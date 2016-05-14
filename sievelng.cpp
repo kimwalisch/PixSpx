@@ -117,7 +117,7 @@ Sievelng<longint>::eratosthene() {
     if (SIZE > INT_MAX)
       szx = 2000000010;
     else szx = SIZE;
-    cout << "szx = " << szx << endl;
+    cerr << "szx = " << szx << endl;
     auxprimes.setup(szx,MAX64);
     auxprimes.set_at_left(max_prime());
     auxprimes.eratosthene();
