@@ -1,0 +1,105 @@
+#!/bin/csh
+
+if ($argv[1] == pi64) then
+	make clean
+	ln -s int64.h longint.h
+	ln -s int64.h longval.h
+	ln -s typedefs.64.h typedefs.h
+	ln -s f64.1.h f.h
+	ln -s F1.cc F.cc
+endif 
+
+if ($argv[1] == pi) then
+	make clean
+	ln -s longgmp.h longint.h
+	ln -s longgmp.h longval.h
+	ln -s typedefs.gmp.h typedefs.h
+	ln -s f64.1.h f.h
+	ln -s F1.cc F.cc
+endif
+
+if ($argv[1] == sump) then
+	make clean
+	ln -s longgmp.h longint.h
+	ln -s longgmp.h longval.h
+	ln -s typedefs.gmp.h typedefs.h
+	ln -s f64.2.h f.h
+	ln -s F2.cc F.cc
+endif
+
+if ($argv[1] == sump64) then
+#	echo "Je configure pour sump64 "
+	ln -s -f int64.h longint.h
+	ln -s -f longgmp.h longval.h
+	ln -s -f typedefs.64.h typedefs.h
+	ln -s -f f64.2.h f.h
+	ln -s -f F2.cc F.cc
+endif
+
+if ($argv[1] == sum1p) then
+	make clean
+	ln -s longmp.h longint.h
+	ln -s longdouble.h longval.h
+	ln -s typedefs.gmp.real.h typedefs.h
+	ln -s inv64.h f.h
+	ln -s Finv.h F.h
+	ln -s Finv.cc F.cc
+endif
+
+
+if ($argv[1] == sumint) then
+	make clean
+	ln -s longgmp.h longint.h
+	ln -s longgmp.h longval.h
+	ln -s typedefs.gmp.h typedefs.h
+	ln -s f64.2.h f.h
+	ln -s F2.h F.h
+	ln -s F2.cc F.cc
+	make sumint 
+endif
+
+if ($argv[1] == prime64) then
+	make clean
+	ln -s int64.h longint.h
+	ln -s int64.h longval.h
+	ln -s typedefs.64.h typedefs.h
+	ln -s f64.1.h f.h
+	ln -s F1.cc F.cc
+endif
+
+if ($argv[1] == prime) then
+	make clean
+	ln -s longgmp.h longint.h
+	ln -s longgmp.h longval.h
+	ln -s typedefs.gmp.h typedefs.h
+	ln -s f64.1.h f.h
+	ln -s F1.cc F.cc
+endif
+
+if ($argv[1] == invsump64) then
+	make clean
+	ln -v -s int64.h longint.h
+	ln -v -s longgmp.h longval.h
+	ln -v -s typedefs.64.gmp.h typedefs.h
+	ln -v -s f64.2.h f.h
+	ln -v -s F2.cc F.cc
+endif
+
+if ($argv[1] == invsump) then
+	make clean
+	ln -s longgmp.h longint.h
+	ln -s longgmp.h longval.h
+	ln -s typedefs.gmp.h typedefs.h
+	ln -s f64.2.h f.h
+	ln -s F2.cc F.cc
+endif
+
+
+if ($argv[1] == testF2) then
+	make clean
+	ln -s longgmp.h longint.h
+	ln -s longgmp.h longval.h
+	ln -s typedefs.gmp.h typedefs.h
+	ln -s f64.2.h f.h
+	ln -s F2.cc F.cc
+endif
