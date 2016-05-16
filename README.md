@@ -59,7 +59,7 @@ These programms are verbose. A lot of informations are written on
 stderr. If you want a less verbose output you can redirect stderr to
 null, using, for example,
 
-pi64 10000000000000000000 2>/dev/null
+pi64 100000000000000000 2>/dev/null
 
 These programms were written long ago, about ten years.
 It is possible to compute for larger values of x by making,
@@ -69,7 +69,8 @@ for example,
 
 creates an executable which was used to compute pi(x) for x until
 10^20. But I made some changes several years ago that introduced
-some arithmetic overflows. So it is better to not use these long versions.
+some arithmetic overflows, and I never took the time to correct
+them. So it is better to not use these long versions.
 
 
 
