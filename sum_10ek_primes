@@ -1,0 +1,76 @@
+
+
+************************************************************************************************
+                            On my macbook pro retina (mi- 2012)
+************************************************************************************************
+macbook:PixSumpx deleglis$ time sum_n_firstprimes 10^12
+Computing  prime number  10^12
+prime number  10^12  =  29996224275833
+Now computing the sum of primes up to  29996224275833
+29996224275833 14738971133550183905879827
+
+real	0m7.099s
+user	0m7.048s
+sys	0m0.021s
+
+************************************************************************************************
+
+macbook:PixSumpx deleglis$ time sum_n_firstprimes 10^13
+Computing  prime number  10^13
+prime number  10000000000000  =  323780508946331
+Now computing the sum of primes up to  323780508946331
+323780508946331 1593061976858155930556059673
+
+real	0m30.819s
+user	0m30.750s
+sys	0m0.062s
+
+************************************************************************************************
+                          On a pc Linux Ubuntu , processeur 3.3GHz
+************************************************************************************************
+
+Computing  prime number  10^13
+prime number  10^13  =  323780508946331
+Now computing the sum of primes up to  323780508946331
+323780508946331 1593061976858155930556059673
+
+real	0m33.259s
+user	0m33.238s
+sys	0m0.020s
+
+************************************************************************************************
+Computing  prime number  10^14
+prime number  10^14  =  3475385758524527
+Now computing the sum of primes up to  3475385758524527
+3475385758524527 171191473337951767580578821529
+
+142.49user 0.06system 2:22.55elapsed 100%CPU (0avgtext+0avgdata 40960maxresident)k
+32inputs+24outputs (0major+26291minor)pagefaults 0swaps
+
+************************************************************************************************
+Computing  prime number  10^15
+prime number  10^15  =  37124508045065437
+Now computing the sum of primes up to  37124508045065437
+37124508045065437 18305009217958957209544913346089
+
+515.87user 0.09system 8:35.94elapsed 100%CPU (0avgtext+0avgdata 115940maxresident)k
+0inputs+24outputs (0major+53636minor)pagefaults 0swaps
+
+************************************************************************************************
+Computing  prime number  10^16
+prime number  10^16  =  394906913903735329
+Now computing the sum of primes up to  394906913903735329
+394906913903735329 1948856725874605823462196012533593
+
+2517.16user 0.14system 41:57.19elapsed 100%CPU (0avgtext+0avgdata 312268maxresident)k
+0inputs+24outputs (0major+116285minor)pagefaults 0swaps
+************************************************************************************************
+
+Computing  prime number  10^17
+prime number  10^17  =  4185296581467695669
+Now computing the sum of primes up to  4185296581467695669
+4185296581467695669 206701136427678065474146934386068697
+
+11008.09user 0.31system 3:03:28elapsed 100%CPU (0avgtext+0avgdata 705892maxresident)k
+400inputs+24outputs (2major+172809minor)pagefaults 0swaps
+************************************************************************************************

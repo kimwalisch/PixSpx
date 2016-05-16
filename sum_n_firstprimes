@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Computing  prime number " $1
+ithp=$(../SIEVE2015/Meissel/Pi/ithprime $1 | grep nthpr | grep -oE '[^ ]+$')
+echo "prime number " $1 " = " $ithp
+echo "Now computing the sum of primes up to " $ithp
+echo $(sump64 2>/dev/null $ithp)

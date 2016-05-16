@@ -22,13 +22,9 @@ OBJ =	arith_tools.o  btable.o p2xy.o data.o  primes.o\
 
 CXX =  g++ 
 
-%.o: %.cc *.h
-	$(CXX) $(CFLAGS) -c $<
-
-objs:$(OBJ)
 
 all:
-	make cleanexec
+	make clean
 	echo "Make pi64"
 	make pi64
 	echo "Make sump64"	
@@ -37,6 +33,11 @@ all:
 	make prime64
 	echo "Make invsump64"	
 	make invsump64
+
+objs:$(OBJ)
+
+%.o: %.cc *.h
+	$(CXX) $(CFLAGS) -c $<
 
 main: $(OBJ)
 	$(CXX) $(CFLAGS) $(LFLAGS) -o main -L/opt/local/lib   main.cc $(OBJ)  $(LIBS)
@@ -101,8 +102,6 @@ invsump	: $(SOURCES) invsump.cc
 
 clean:
 	rm -f *~ *.o longint.* longval.* f.h F.h F.cc typedefs.h p
-
-cleanexec:
 	rm -rf  pi64 sump64 sump invsump invsump64 prime64 prime pi main
 
 tags:
