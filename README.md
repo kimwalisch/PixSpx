@@ -30,7 +30,7 @@ the gnu compiler g++ and the library GNU MP.
  I tested them  on a PC using linux Ubuntu
  and on a mac-book pro 64 bits.
 
-Once we have got the sources ant put them in a directory, you open a
+Once we have got the sources ant put them in a directory, open a
 command window in this this directory and execute
 
 > make
