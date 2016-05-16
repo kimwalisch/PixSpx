@@ -102,7 +102,6 @@ invsump	: $(SOURCES) invsump.cc
 
 clean:
 	rm -f *~ *.o longint.* longval.* f.h F.h F.cc typedefs.h p
-	rm -rf  pi64 sump64 sump invsump invsump64 prime64 prime pi main
 
 tags:
 	etags *.cc *.h Makefile
