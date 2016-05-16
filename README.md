@@ -34,7 +34,8 @@ command window in this this directory and execute
 
 > make
 
-This will create four executable programms
+This will create four executable programms,
+pi64, sump64, prime64, invsump64.
 
 pi64             :  pi64  x  compute pi(x) for x <=2^63-1
 
