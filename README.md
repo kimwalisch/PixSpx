@@ -25,7 +25,8 @@ Or in Arxiv, http://arxiv.org/abs/1207.0603, pages 25-35.
 
 
 # How to use these files
-These files, written in C++,  can be compiled using C++
+These files, written in C++,  can be compiled using
+the gnu compiler g++ and the library GNU MP.
  I tested them  on a PC using linux Ubuntu
  and on a mac-book pro 64 bits.
 
