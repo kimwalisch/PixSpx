@@ -37,16 +37,19 @@ command window in this this directory and execute
 This will create four executable programms,
 pi64, sump64, prime64, invsump64.
 
-pi64             :  pi64  x  compute pi(x) for x <=2^63-1
+> pi64  x
+compute pi(x) for x <=2^63-1
 
-sump64       :  sump64 x computes sp(x) for x <=2^63-1
+> sump64 x
+computes sp(x) for x <=2^63-1
 
-prime64      : prime64 n  computes the nth prime   (n <= 10^17)
+> prime64 n
+computes the nth prime   (n <= 10^17)
 
-invsump64  : invsump64 y computes the largest prime p such
-                     that sp(p) <= y and the diffrence Delta=y-sp(p)
-	                 Here y must be less than 10^35
-
+> invsump64 y
+computes the largest prime p such that sp(p) <= y
+and the diffrence Delta = y-sp(p).
+Here y must be less than 10^35
 
 These programms are verbose. A lot of informations are written on
 stderr. If you want a less verbose output you can redirect stderr to
