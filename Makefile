@@ -90,7 +90,6 @@ invsump64: $(SOURCES)
 	make clean
 
 
-
 invsump	: $(SOURCES) invsump.cc
 	./configure invsump
 	make objs
