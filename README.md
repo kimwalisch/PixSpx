@@ -61,7 +61,7 @@ null, using, for example,
 
 pi64 100000000000000000 2>/dev/null
 
-#Remark 1:
+#Remark 1
 It is the same source main.cc that is  used to compute pi(x) or sp(x).
 The only change is that, in the case of pi(x) the function f which is
 summed other primes is the constant function 1, while, for computing
