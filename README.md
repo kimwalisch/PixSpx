@@ -61,16 +61,19 @@ null, using, for example,
 
 pi64 100000000000000000 2>/dev/null
 
-These programms were written long ago, about ten years.
-It is possible to compute for larger values of x by making,
-for example,
+#Remark 1:
+It is the same source main.cc that is  used to compute pi(x) or sp(x).
+The only change is that, in the case of pi(x) the function f which is
+summed other primes is the constant function 1, while, for computing
+sp(x), the function f is replaced by the identity function f(x)=x.
 
-> make pi
+#Remark 2
+Usin files in  Repository PixSpx2015 you can  construct a program
+pi for computin pi(x)  and a program ithprime for computing the
+ithprime, that are three of four times faster than pi64 and prime64.
 
-creates an executable which was used to compute pi(x) for x until
-10^20. But I made some changes several years ago that introduced
-some arithmetic overflows, and I never took the time to correct
-them. So it is better to not use these long versions.
+
+
 
 
 
