@@ -39,7 +39,7 @@ pi64, sump64, prime64, invsump64.
 
 > pi64  x
 
-compute pi(x) for x <=2^63-1
+computes pi(x) for x <=2^63-1
 
 > sump64 x
 
