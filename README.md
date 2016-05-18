@@ -69,9 +69,11 @@ sp(x), the function f is replaced by the identity function f(x)=x.
 
 #Remark 2
 Usin files in  Repository PixSpx2015 you can  construct a program
-pi for computin pi(x)  and a program ithprime for computing the
-ithprime, that are three of four times faster than pi64 and prime64.
-I didn't find enough time to write the programms computing sp(x).
+pi for computin pi(x)  and a program ithprime(n)
+that are three of four times faster than pi64 and prime64,
+and not limited to 64 bits integers.
+
+
 
 
 
